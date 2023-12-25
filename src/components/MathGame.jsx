@@ -41,6 +41,7 @@ function MathGame({questionGenerator, condition, pageTitle}) {
         totalAttempts.current = 0;
         wonAttempts.current = 0;
 
+        setResults({timer: 0, accuracy: 1, questions: 0});
         setData({
             progress: 1,
             question: questionGenerator()
