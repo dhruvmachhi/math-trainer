@@ -1,0 +1,92 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 6rem;
+    color: white;
+}
+
+.game .progress {
+    font-size: 2rem;
+}
+
+.game .question {
+    font-size: 6rem;
+    display: flex;
+    align-items: end;
+    text-align: end;
+}
+
+.game .numbers p {
+    margin: 0;
+}
+
+.game hr {
+    border: 1px white solid;
+    width: 12rem;
+    margin: 0;
+}
+
+.game .answer {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.game .answer .textbox {
+    background-color: rgb(72, 72, 72);
+    text-align: end;
+    width: 10.75rem;
+    font-size: 6rem;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.game .answer .enter {
+    position: absolute;
+    right: -4rem;
+}
+
+.game .stats {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.game .stats .time, .game .stats .accuracy {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    width: 100px;
+}
+
+.game .stats .time img {
+    width: 2rem;
+}
+
+.game .stats .accuracy img {
+    width: 2.5rem;
+}
+
+.game .answer .textbox:empty:not(:focus):before{
+    content: attr(data-ph);
+    color: grey;
+}
+
+.game .answer .textbox:hover {
+    cursor: text;
+}
+
+.game .answer .textbox:focus {
+    outline: 3px black solid;
+}
+
+.game .exitnotice {
+    margin-top: 2.25rem;
+}

@@ -1,0 +1,12 @@
+body {
+    background-color: #18181b;
+    transition: 150ms linear;
+}
+
+body.right {
+    background-color: #265435;
+}
+
+body.wrong {
+    background-color: #761e1e;
+}

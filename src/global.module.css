@@ -1,0 +1,30 @@
+.main-buttons {
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border: 1px solid white;
+    border-radius: 10%;
+}
+
+.main-buttons:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .1s;
+    cursor: pointer;
+}
+
+.header1 {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 4rem;
+
+    color: white;
+}
+
+.header3 {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 1rem;
+
+    color: white;
+}
