@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import {
-    createBrowserRouter,
+    createHashRouter,
     RouterProvider
 } from "react-router-dom";
 
@@ -12,7 +12,8 @@ import MultiplyGame from './pages/MultiplyGame.jsx';
 
 import "./main.css"
 
-const router = createBrowserRouter([
+// yuck, cant use browserRouter with gh pages
+const router = createHashRouter([
     {
         path: "/",
         element: <GameSelect />
